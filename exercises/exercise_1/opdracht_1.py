@@ -7,5 +7,7 @@ def likes(team: list) -> str:
         return f"{team[0]} and {team[1]} like this"
     elif len(team)==3:
         return f"{team[0]}, {team[1]} and {team[2]} like this"
+    elif len(team)>=4:
+        return f"{team[0]}, {team[1]} and {len(team)-2} others like this"
     else: 
-        return "too much likes, oopsie"
+        return "something went wrong, oopsie"
